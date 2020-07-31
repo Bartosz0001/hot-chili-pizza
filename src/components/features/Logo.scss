@@ -1,0 +1,48 @@
+@import '../../style/settings.scss';
+
+.component {
+    position: relative;
+    min-height: ($base-size * 30);
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title {
+    display: inline-block;
+    font-size: ($base-size * 5);
+    color: $color-dark;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0 0 0 70px;
+    font-family: $font-title;
+}
+
+.pepper {
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.image-pepper {
+    width: 50px;
+}
+
+.title-label {
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    text-align: center;
+    background: $color-light;
+    color: $color-dark;
+    border: 2px solid $color-dark;
+    border-radius: 20px;
+    font-size: 50px;
+}
