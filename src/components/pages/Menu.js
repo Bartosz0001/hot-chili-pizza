@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../layout/Header';
-import Card from '../features/Card';
+import Card from '../features/CardContainer';
 import { pizza } from '../../data/dataSource';
 
 const Menu = () => (
