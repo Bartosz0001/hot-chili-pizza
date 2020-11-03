@@ -3,7 +3,7 @@ import Card from './Card';
 import {createAction_addToCart} from '../../redux/cardsRedux';
 
 const mapDispatchToProps = (dispatch) => ({
-    addToCart: title => dispatch(createAction_addToCart(title))
+    addToCart: pizza => dispatch(createAction_addToCart(pizza)),
 });
 
-export default connect(mapDispatchToProps) (Card);
+export default connect(null, mapDispatchToProps) (Card);

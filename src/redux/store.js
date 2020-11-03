@@ -1,11 +1,15 @@
-import {createStore} from 'redux';
-import cardsReducer from './cardsRedux';
+import {combineReducers, createStore} from 'redux';
+import cartReducer from './cardsRedux';
 
 const initialState = {
     cart: [],
 };
 
-const storeReducer = cardsReducer;
+const reducers = {
+    cart: cartReducer,
+};
+
+const storeReducer = combineReducers(reducers);
 
 const store = createStore(
     storeReducer,

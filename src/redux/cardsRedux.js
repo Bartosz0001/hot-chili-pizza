@@ -1,8 +1,10 @@
 //selectors
 
+export const getCart = (state) => state.cart;
+
 //action names creator
 
-const reducerName = 'cards'; 
+const reducerName = 'cart'; 
 const createActionName = name => `app/${reducerName}/${name}`;
 
 //action types
