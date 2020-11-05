@@ -8,6 +8,7 @@ const Cart = (props) => (
         {props.cart.map(cartItem => (
             <CartItem key={props.cart.indexOf(cartItem)} {...cartItem} index={props.cart.indexOf(cartItem)} />
         ))}
+        <button>ORDER</button>
     </section>
 );
 

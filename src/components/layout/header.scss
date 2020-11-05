@@ -1,3 +1,9 @@
+@import '../../style/settings.scss';
+
+.wrapper {
+    position: relative;
+}
+
 .nav-list {
     font-size: 20px;
     text-transform: uppercase;
@@ -22,4 +28,20 @@
     i {
         font-size: 20px;
     }
+}
+
+.cart-visible {
+    display: block;
+    background: #FFE2CA;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    border: 5px solid $color-dark;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+.cart-hidden {
+    display: none;
 }
