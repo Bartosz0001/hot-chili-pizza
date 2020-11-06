@@ -1,0 +1,46 @@
+@import '../../style/settings.scss';
+
+p {
+    font-size: $base-size*1.5;
+    font-family: $font-text;
+    padding: 10px;
+}
+
+section {
+    padding: 10px;
+}
+
+.intro {
+    background-color: $color-grey;
+}
+
+.promotions {
+    background-color: $color-light;
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        box {
+            flex: 0 0 33%;
+        }
+
+        img {
+            width: 300px;
+            max-height: 200px;
+            overflow: hidden;
+            padding: 10px;
+        }
+    }
+}
+
+.reviews {
+    background-color: $color-grey;
+}
+
+.section-title {
+    text-align: center;
+    font-size: $base-size*3;
+    font-family: $font-section-title;
+}

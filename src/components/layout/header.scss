@@ -9,21 +9,27 @@
     text-transform: uppercase;
     display: flex;
     justify-content: center;
+    padding: 10px;
 
     a {
         padding-left: 20px;
         text-decoration: none;
-        color: black;
+        color: $color-dark;
+    }
+
+    a:hover {
+        color: $color-hover;
+        text-decoration: underline;
     }
 }
 
 .icon-cart {
-    color: black;
+    color: $color-dark;
     text-align: center;
     cursor: pointer;
     font-weight: 700;
     margin-left: 20px;
-    background-color: white;
+    background-color: $color-light;
 
     i {
         font-size: 20px;
@@ -32,7 +38,7 @@
 
 .cart-visible {
     display: block;
-    background: #FFE2CA;
+    background: $color-cart;
     position: absolute;
     right: 0;
     z-index: 2;
