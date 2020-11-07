@@ -1,8 +1,19 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Header from '../layout/Header';
 import './home.scss';
+import Reviews from '../features/Reviews';
+import {reviews} from '../../data/dataSource';
 
-const HomePage = () => (
+const HomePage = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((currentSlide + 1) % reviews.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  });
+
+  return (
     <div>
       <Header />
 
@@ -18,7 +29,7 @@ const HomePage = () => (
         <h2 className='section-title'>Promotions</h2>
         <div className='wrapper'>
           <div className='box'>
-            <p>Two sauces for free!</p>
+            <p>Three sauces for free!</p>
             <img src='https://storage.needpix.com/rsynced_images/sauce-4171459_1280.jpg' alt='sauces' />
           </div>
           <div className='box'>
@@ -34,8 +45,10 @@ const HomePage = () => (
 
       <section className='reviews'>
         <h2 className='section-title'>Reviews</h2>
+        <Reviews {...reviews.find(review => (review.id === currentSlide))} />
       </section>
     </div>
-  );
+    );
+  };
   
   export default HomePage;

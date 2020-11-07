@@ -41,3 +41,24 @@ export const pizza = [
         price: 27,
     },
 ];
+
+export const reviews = [
+    {
+        id: 0,
+        name: 'John',
+        opinion: 'Pizza very tasty. I recommend the spacy sauce, it\'s really good.',
+        starAmount: 5,
+    }, 
+    {
+        id: 1,
+        name: 'Elena',
+        opinion: 'Fast delivery, pizza is hot and delicious.',
+        starAmount: 5,
+    },
+    {
+        id: 2,
+        name: 'Joel',
+        opinion: 'The best pizza in these price range.',
+        starAmount: 5,
+    },
+];
