@@ -1,0 +1,28 @@
+@import '../../style/settings.scss';
+
+.card-box {
+    display: flex;
+    position: relative;
+    font-family: $font-text;
+
+    .card-btn {
+        position: absolute;
+        right: 0;
+        right: 0;
+        margin-top: 20px;
+        padding: 5px;
+        color: $color-dark;
+        background-color: $color-cart;
+    }
+
+    .card-btn:hover {
+        cursor: pointer;
+        background-color: $color-cart-hover;
+        border: solid 1px $color-hover;
+    }
+
+    .price {
+        position: absolute;
+        right: 120px;
+    }
+}

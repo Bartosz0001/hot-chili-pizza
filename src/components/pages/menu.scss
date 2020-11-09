@@ -1,0 +1,14 @@
+@import '../../style/settings.scss';
+
+.menu {
+    background-color: $color-grey;
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    border: solid 1px $color-hover;
+
+    .menu-title {
+        font-family: $font-section-title;
+    }
+}

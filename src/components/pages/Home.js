@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Header from '../layout/Header';
+import Footer from '../layout/Footer';
 import './home.scss';
 import Reviews from '../features/Reviews';
 import {reviews} from '../../data/dataSource';
@@ -47,6 +48,8 @@ const HomePage = () => {
         <h2 className='section-title'>Reviews</h2>
         <Reviews {...reviews.find(review => (review.id === currentSlide))} />
       </section>
+
+      <Footer />
     </div>
     );
   };

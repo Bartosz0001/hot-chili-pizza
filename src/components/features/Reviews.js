@@ -7,7 +7,6 @@ const Reviews = (reviews) => (
         <div className='frame'>
             <h3 className='reviewer'>{reviews.name}</h3>
             <p>{reviews.opinion}</p>
-            <p>{reviews.starAmount}</p>
           </div>
     </div>
 );

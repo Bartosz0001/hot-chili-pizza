@@ -42,6 +42,29 @@ export const pizza = [
     },
 ];
 
+export const sides = [
+    {
+        id: 1,
+        name: 'Spicy tomato sauce',
+        ingredients: [],
+        price: 2,
+    },
+
+    {
+        id: 2,
+        name: 'Garlic sauce',
+        ingredients: [],
+        price: 2,
+    },
+
+    {
+        id: 3,
+        name: 'Honey mustard sauce',
+        ingredients: [],
+        price: 2,
+    },
+];
+
 export const reviews = [
     {
         id: 0,
