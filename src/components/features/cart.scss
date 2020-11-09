@@ -1,0 +1,23 @@
+@import '../../style/settings.scss';
+
+.cart {
+    padding: 5px;
+
+    .cart-title {
+        font-size: $base-size*1.2;
+        margin: 0;
+        padding-bottom: 10px;
+        font-family: $font-text;
+    }
+
+    .order-btn {
+        background-color: $color-grey;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .order-btn:hover {
+        background-color: $color-cart-hover;
+        border: solid 1px $color-hover;
+    }
+}
