@@ -2,6 +2,7 @@
 
 .cart-item {
     padding-bottom: 10px; 
+    position: relative;
     
     .cart-item-name {
         margin: 0;
@@ -10,5 +11,16 @@
     .cart-item-adds {
         margin: 0;
         font-size: $base-size*0.8;
+    }
+
+    .cart-item-delete {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        position: absolute;
+        right: 10px;
+        cursor: pointer;
+        background-color: $color-cart;
+        color: $color-remove;
     }
 }

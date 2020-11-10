@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import CartItem from '../commons/CartItem';
+import CartItem from '../commons/CartItemContainer';
 import './cart.scss';
 
 const Cart = (props) => (
@@ -9,7 +9,7 @@ const Cart = (props) => (
         {props.cart.map(cartItem => (
             <CartItem key={props.cart.indexOf(cartItem)} {...cartItem} index={props.cart.indexOf(cartItem)} />
         ))}
-        <button className='order-btn'>ORDER</button>
+        <button className='order-btn' onClick={() => alert('Order sent!')}>ORDER</button>
     </section>
 );
 
